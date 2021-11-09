@@ -1,6 +1,6 @@
 # Ngx Basic Number Input
 
-angular 12.1.x. [Buy Me a Copy](https://www.buymeacoffee.com/huymax)
+angular 12.1.x. [Buy Me a Coffee](https://www.buymeacoffee.com/huymax)
 
 ## Screenshots
 
