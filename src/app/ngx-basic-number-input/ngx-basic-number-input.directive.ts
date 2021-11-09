@@ -4,6 +4,7 @@ import {
   forwardRef,
   HostListener,
   Input,
+  OnInit,
   Provider,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
@@ -19,7 +20,9 @@ const CONTROL_VALUE_ACCESSOR: Provider = {
   selector: '[ngx-basic-number-input]',
   providers: [CONTROL_VALUE_ACCESSOR],
 })
-export class NgxBasicNumberInputComponent implements ControlValueAccessor {
+export class NgxBasicNumberInputComponent
+  implements ControlValueAccessor, OnInit
+{
   private onTouched!: Function;
   private onChanged!: Function;
 
@@ -30,7 +33,9 @@ export class NgxBasicNumberInputComponent implements ControlValueAccessor {
 
   private inputRef: NumberInput;
 
-  constructor(private element: ElementRef) {
+  constructor(private element: ElementRef) {}
+
+  ngOnInit() {
     this.inputRef = new NumberInput(this.element.nativeElement, this.config);
   }
 

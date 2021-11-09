@@ -14,7 +14,12 @@ export class AppComponent implements OnInit {
 
   public numberInputConfig: INumberInputOptional = {
     separator: ',',
-    fractionDigits: 1,
+    fractionDigits: 0,
+  };
+
+  public decimalInputConfig: INumberInputOptional = {
+    separator: ',',
+    fractionDigits: 2,
   };
 
   constructor(private formBuilder: FormBuilder) {}

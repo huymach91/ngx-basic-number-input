@@ -1,3 +1,4 @@
+<h4>Integer</h4>
 <form novalidate [formGroup]="form">
   <input
     type="text"
@@ -6,4 +7,8 @@
     [config]="numberInputConfig"
   />
 </form>
-{{ form.get('number').value }}
+model: {{ form.get('number').value }}
+
+<h4>Decimal</h4>
+<input type="text" ngx-basic-number-input [config]="decimalInputConfig" />
+<div>model: {{ form.get('number').value }}</div>
