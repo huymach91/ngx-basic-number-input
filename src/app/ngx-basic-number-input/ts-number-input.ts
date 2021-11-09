@@ -244,6 +244,7 @@ export class NumberInput {
 
   private insertChar(position: number, insertValue: string) {
     this.element.setRangeText(insertValue, position, position + 1);
+    this.dispathChangeEvent(this.element.value);
   }
 
   private formatNumber(num: string) {

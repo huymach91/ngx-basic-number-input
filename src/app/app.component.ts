@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   });
 
   decimal = '12.05';
-  percentage = '12.15';
+  percentage = '';
 
   public numberInputConfig: INumberInputOptional = {
     separator: ',',
