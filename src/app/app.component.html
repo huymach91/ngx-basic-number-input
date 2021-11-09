@@ -17,3 +17,12 @@ model: {{ form.get('number').value }}
   [(ngModel)]="decimal"
 />
 <div>model: {{ decimal }}</div>
+
+<h4>Percentage</h4>
+<input
+  type="text"
+  ngx-basic-number-input
+  [config]="percentageInputConfig"
+  [(ngModel)]="percentage"
+/>
+<div>model: {{ percentage }}</div>
