@@ -1,7 +1,11 @@
 {
-  "name": "angular",
-  "version": "0.0.0",
+  "name": "ngx-basic-number-input",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Huy Mach",
+    "email": "huy.mach.webdev@gmail.com"
+  },
   "dependencies": {
     "@angular/animations": "^12.2.5",
     "@angular/common": "^12.2.5",
