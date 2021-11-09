@@ -1,4 +1,9 @@
 <form novalidate [formGroup]="form">
-  <input type="text" ngx-basic-number-input formControlName="number" />
+  <input
+    type="text"
+    ngx-basic-number-input
+    formControlName="number"
+    [config]="numberInputConfig"
+  />
 </form>
 {{ form.get('number').value }}
