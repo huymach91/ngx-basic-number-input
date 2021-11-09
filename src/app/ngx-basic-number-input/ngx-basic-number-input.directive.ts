@@ -3,10 +3,11 @@ import {
   ElementRef,
   forwardRef,
   HostListener,
+  Input,
   Provider,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { NumberInput } from './ts-number-input';
+import { INumberInputOptional, NumberInput } from './ts-number-input';
 
 const CONTROL_VALUE_ACCESSOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
@@ -22,13 +23,15 @@ export class NgxBasicNumberInputComponent implements ControlValueAccessor {
   private onTouched!: Function;
   private onChanged!: Function;
 
+  @Input('config') config: INumberInputOptional = {
+    separator: ',',
+    fractionDigits: 0,
+  };
+
   private inputRef: NumberInput;
 
   constructor(private element: ElementRef) {
-    this.inputRef = new NumberInput(this.element.nativeElement, {
-      separator: ',',
-      fractionDigits: 1,
-    });
+    this.inputRef = new NumberInput(this.element.nativeElement, this.config);
   }
 
   @HostListener('inputChange', ['$event'])
