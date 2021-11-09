@@ -5,3 +5,9 @@ p {
 h4 {
   margin-bottom: 5px;
 }
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+}
