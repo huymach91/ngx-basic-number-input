@@ -1,3 +1,7 @@
-# ngx-basic-number-input
+# Ngx Basic Number Input
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ngx-basic-number-input)
+angular 12.1.x. [Buy Me a Copy](https://www.buymeacoffee.com/huymax)
+
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/huymach91/ngx-basic-number-input/master/src/assets/ngx-basic-number-input.png)
