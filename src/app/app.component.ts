@@ -12,6 +12,8 @@ export class AppComponent implements OnInit {
     number: this.formBuilder.control(''),
   });
 
+  decimal = '12.05';
+
   public numberInputConfig: INumberInputOptional = {
     separator: ',',
     fractionDigits: 0,

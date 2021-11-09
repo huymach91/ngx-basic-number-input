@@ -10,5 +10,10 @@
 model: {{ form.get('number').value }}
 
 <h4>Decimal</h4>
-<input type="text" ngx-basic-number-input [config]="decimalInputConfig" />
-<div>model: {{ form.get('number').value }}</div>
+<input
+  type="text"
+  ngx-basic-number-input
+  [config]="decimalInputConfig"
+  [(ngModel)]="decimal"
+/>
+<div>model: {{ decimal }}</div>

@@ -178,6 +178,7 @@ export class NumberInput {
 
     let value = event.target.value;
     const formatted = this.format(value);
+    // model to view
     this.element.value = formatted;
     // trigger 'change' event
     const unformatted = this.unformat(formatted);
@@ -192,7 +193,6 @@ export class NumberInput {
       this.optional.fractionDigits && this.fractionalChar === ','
         ? this.decimalPart(value)
         : this.noDecimal(value);
-
     // case 2: if percentage = true, it's value must be [0, 100]
     if (this.optional.percentage) {
       formatted = this.percentage(this.unformat(formatted));

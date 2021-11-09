@@ -47,7 +47,7 @@ export class NgxBasicNumberInputComponent
   }
 
   writeValue(value: string): void {
-    const formatted = value ? value.replace(/[^0-9]/, '') : '0';
+    const formatted = value ? value.replace(/[^0-9\.\,]/, '') : '0';
     (this.element.nativeElement as HTMLInputElement).value =
       this.inputRef.format(formatted);
   }
