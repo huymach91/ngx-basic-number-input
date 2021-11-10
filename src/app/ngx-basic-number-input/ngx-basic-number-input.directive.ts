@@ -12,7 +12,7 @@ import { INumberInputOptional, NumberInput } from './ts-number-input';
 
 const CONTROL_VALUE_ACCESSOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => NgxBasicNumberInputComponent),
+  useExisting: forwardRef(() => NgxBasicNumberInputDirective),
   multi: true,
 };
 
@@ -20,7 +20,7 @@ const CONTROL_VALUE_ACCESSOR: Provider = {
   selector: '[ngx-basic-number-input]',
   providers: [CONTROL_VALUE_ACCESSOR],
 })
-export class NgxBasicNumberInputComponent
+export class NgxBasicNumberInputDirective
   implements ControlValueAccessor, OnInit
 {
   private onTouched!: Function;

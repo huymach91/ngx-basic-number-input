@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgxBasicNumberInputComponent } from './ngx-basic-number-input.directive';
+import { NgxBasicNumberInputDirective } from './ngx-basic-number-input.directive';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [NgxBasicNumberInputComponent],
-  exports: [NgxBasicNumberInputComponent],
+  declarations: [NgxBasicNumberInputDirective],
+  exports: [NgxBasicNumberInputDirective],
 })
 export class NgxBasicNumberInputModule {}
